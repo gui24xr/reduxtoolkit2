@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.posts-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 columnas */
+    gap: 15px; /* Espacio entre las tarjetas */
+}
+
+.post-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px; /* Espacio dentro de la tarjeta */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s; /* Efecto al pasar el mouse */
+}
+
+.post-card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente al pasar el mouse */
+}
+
+.post-image {
+    width: 100%; /* Asegura que la imagen se ajuste al tamaño de la tarjeta */
+    height: auto;
+    border-radius: 5px;
+}
